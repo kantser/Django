@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			{% block title %}Navitech - Профессиональные IT-услуги{% endblock %}
+		</title>
+		<meta
+			name="description"
+			content="{% block description %}Компания Navitech предоставляет полный спектр IT-услуг для бизнеса: разработка ПО, веб-разработка, мобильные приложения, облачные решения.{% endblock %}"
+		/>
+
+		<!-- Favicon -->
+		<link rel="icon" href="/static/images/favicon.ico" />
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="/static/css/style.css" />
+
+		{% block extra_css %}{% endblock %}
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="{% url 'home' %}">
+					<i class="fas fa-laptop-code me-2"></i>IT Solutions
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Услуги</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Проекты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#team">Команда</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'contact' %}">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main Content -->
+		<main>{% block content %}{% endblock %}</main>
+
+		<!-- Footer -->
+		<footer class="bg-dark text-white py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<h5 class="text-uppercase mb-4">Navitech</h5>
+						<p>
+							Профессиональные IT-решения для вашего бизнеса. Мы создаем
+							технологии, которые работают на вас.
+						</p>
+					</div>
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<h5 class="text-uppercase mb-4">Контакты</h5>
+						<ul class="list-unstyled">
+							<li class="mb-2">
+								<i class="fas fa-map-marker-alt me-2"></i> г. Новороссийск, ул.
+								Лиловая, 4,офис 1
+							</li>
+							<li class="mb-2">
+								<i class="fas fa-phone me-2"></i> +7 (977) 722-12-15
+							</li>
+							<li class="mb-2">
+								<i class="fas fa-envelope me-2"></i> info@navitech.ru
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<h5 class="text-uppercase mb-4">Социальные сети</h5>
+						<div class="social-links">
+							<a href="#" class="text-white me-3"
+								><i class="fab fa-vk fa-2x"></i
+							></a>
+							<a href="#" class="text-white me-3"
+								><i class="fab fa-telegram fa-2x"></i
+							></a>
+							<a href="#" class="text-white me-3"
+								><i class="fab fa-youtube fa-2x"></i
+							></a>
+							<a href="#" class="text-white"
+								><i class="fab fa-github fa-2x"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<hr class="my-4 bg-light" />
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center text-md-start">
+						<p class="mb-0">&copy; 2025 Navitech. Все права защищены.</p>
+					</div>
+					<div class="col-md-6 text-center text-md-end">
+						<a href="#" class="text-white me-3">Политика конфиденциальности</a>
+						<a href="#" class="text-white">Условия использования</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Back to Top Button -->
+		<a href="#" class="btn btn-primary btn-lg back-to-top" role="button">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="/static/js/main.js"></script>
+
+		{% block extra_js %}{% endblock %}
+	</body>
+</html>

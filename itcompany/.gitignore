@@ -1,0 +1,13 @@
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+# Virtual Environment
+.env/
+venv/
+ENV/
+env/
+virtualenv/
+.venv/
