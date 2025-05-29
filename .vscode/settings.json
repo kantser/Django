@@ -143,5 +143,8 @@
 	],
 	"python.autoComplete.extraPaths": [
 		"c:\\Users\\ekancer\\.vscode\\extensions\\stefanwehr.write-your-python-program-1.3.2\\python\\src\\"
+	],
+	"python.analysis.extraPaths": [
+		"c:\\Users\\ekancer\\.vscode\\extensions\\stefanwehr.write-your-python-program-1.3.2\\python\\src\\"
 	]
 }
