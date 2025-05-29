@@ -13,7 +13,7 @@ class Service(models.Model):
 
     def __str__(self):
         return self.title
-
+# Таблица проекты
 class Project(models.Model):
     title = models.CharField('Название проекта', max_length=200)
     description = models.TextField('Описание')
