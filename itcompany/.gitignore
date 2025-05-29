@@ -11,3 +11,12 @@ ENV/
 env/
 virtualenv/
 .venv/
+# Игнорировать виртуальное окружение Python
+env/
+venv/
+
+# Игнорировать скомпилированные Python-файлы
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
